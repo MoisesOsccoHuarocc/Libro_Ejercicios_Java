@@ -3,43 +3,51 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ejemplo_03_alg;
+import java.util.Arrays;
 
-import java.util.Random;
 
 /**
  *
- * @author Coms-Lap
+ * @author MOISES OSCCO HUAROCC
  */
 public class EJERCICIO_06 {
         public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("PROGRAMA QUE SUMA TODAS LAS COLUMNAS PARES DE UNA MATRIZ 10x10");
         //Definimos la matriz	
-         Random rd = new Random();
-        int i;
-        int[][] matriz = new int[10][10];
-        // rellenamos matrices
-        for (i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                matriz[i][j] = rd.nextInt(19 - 10 + 1) + 10;
-            }
-        }
-        // impresion de la matriz
-        for (i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
-            }
-            System.out.println("");
-        }
-        // Suma de columnas pares
-        for (int j = 0; j < matriz.length; j++) {
-            int sumacol = 0;
-            if (j % 2 == 0) {
-                for (i = 0; i < matriz[j].length; i++) {
-                    sumacol += matriz[i][j];
-                }
-            }
-            System.out.println("La suma de la columna " + j + " de la matriz es: " + sumacol);
-        }
+        int[][]matriz = new int[10][10];
+        int f=0;
+        int j=0;
+        int suma=0;
+        int resta =0;
+        int b =1;
+        for (f=0 ; f < matriz.length ; f++){
+        for (j=0 ; j < matriz.length ; j++){
+
+matriz[f][j]=(int)(Math.random()*100+1);
+
+}
+}
+for (f=0 ; f < matriz.length ; f++){
+System.out.println(Arrays.toString (matriz [f]));
+
+}
+for (int i = 0; i < 10; i++) {
+    if (i%2==0) {
+        
+    
+       
+    
+resta=0;
+for (j=0 ; j < matriz.length ; j++){
+    
+resta = resta + matriz[j][i];
+    
+}
+System.out.println("La suma de la columna "+i+" es:"+resta);
+
+}
     }
+    }
+    
 }

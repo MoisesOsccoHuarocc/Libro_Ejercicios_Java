@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  *
- * @author Coms-Lap
+ * @author MOISES OSCCO HUAROCC
  */
 public class EJERCICIO_04 {
     public static void main(String[] args) {
